@@ -1,0 +1,75 @@
+/* Starter Code */
+/* Basic Reset - removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body Styling */
+body {
+    font-family: nyght serif;
+    background-color: #white;
+    padding: 50px;
+}
+/* Navigation Bar Container */
+.navbar {
+    background-color: #EAEAEA;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 5px solid darkred;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Navigation Menu List */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+/* Navigation Links */
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.3em
+}
+
+/* Hover Effect for Navigation Links */
+.navbar a:hover {
+    color:indianred;
+}
+
+/* Hero Section with Image Background */
+.hero-section {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
