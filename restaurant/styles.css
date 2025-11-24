@@ -7,22 +7,28 @@
 }
 /* Body Styling */
 body {
-    font-family: nyght serif;
-    background-color: #white;
+    font-family: lobster two;
+    background-color: #ghostwhite;
     padding: 50px;
 }
+
+
+
+
+
+
 /* Navigation Bar Container */
 .navbar {
-    background-color: #EAEAEA;
-    padding: 15px 30px;
+    background-color: #C5533C;
+    padding: 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction:column;
     text-align: center;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    border: 5px solid darkred;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border: 0px solid darkred;
 }
 
 /* Logo Styling */
@@ -35,7 +41,7 @@ body {
 .navbar ul {
     list-style-type: none;
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .navbar li {
@@ -46,7 +52,7 @@ body {
 .navbar a {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.3em
@@ -54,7 +60,7 @@ body {
 
 /* Hover Effect for Navigation Links */
 .navbar a:hover {
-    color:indianred;
+    color: beige;
 }
 
 /* Hero Section with Image Background */
@@ -72,4 +78,48 @@ body {
     border-radius: 10px;
     margin-bottom: 40px;
 }
+/* Content Section Layout */
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+/* Image Box Styling */
+.image-box img {
+    width: 594px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Text Module Styling */
+.text-module {
+    max-width: 400px;
+    text-align: left;
+}
+
+.text-module h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.text-module p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+/* Body Styling */
+body {
+    font-family: Nyght serif; sans-serif;
+    background-color: #f5f5f5;
+    padding: 15px;
+
+}
+
 
