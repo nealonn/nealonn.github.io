@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror</title>
+
+    <style>
+        /* GLOBAL */
+        body {
+            font-family: "Nyght Serif", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #FFC36E;
+        }
+
+  /* DARK OVERLAY ON SCROLL */
+.dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* same height as the top area */
+  background: rgba(0, 0, 0, 0); /* starts transparent */
+  pointer-events: none;
+  transition: background 0.4s ease;
+  z-index: 5; /* below navbar, above content */
+}
+
+.dark-overlay.active {
+  background: rgba(0, 0, 0, 0.7); /* darkens on scroll */
+}
+        .about-text {
+            max-width: 480px;
+            margin: 20px auto 70px;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #FFC36E;
+            text-align: center;
+        }
+        /* TOP NAVBAR */
+        .topnav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: transparent;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            z-index: 10;
+        }
+
+        .topnav a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #FF7241;
+            padding: 10px 15px;
+        }
+
+        .topnav a:hover {
+            color: #FFC36E;
+        }
+
+        /* PAGE TITLE */
+        .page-title {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            margin: 120px 0 50px 0;
+        }
+
+        /* GALLERY */
+        .responsive {
+            padding: 10px;
+            float: left;
+            width: 23.5%; /* 4 images per row */
+        }
+        .gallery-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 25px;
+        padding: 20px;
+}   
+
+        .gallery {
+            border: 2px solid #FF7241;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 114, 65, 0.5);
+        }
+
+        /* FORCE UNIFORM IMAGE SIZE */
+        .gallery img {
+            width: 100%;
+            height: 350px;     /* <-- adjust this number to change size */
+            object-fit: cover; /* Keeps images cropped neatly */
+            display: block;
+        }
+
+        .desc {
+            padding: 12px;
+            text-align: center;
+            background-color: #111;
+            font-size: 16px;
+            color: #FFC36E;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 800px) {
+            .responsive {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="dark-overlay"></div>
+<!-- NAVBAR -->
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="aboutthecollection.html">About the Collection</a>
+    <a href="comedy.html">Comedy</a>
+    <a href="horror.html">Horror</a>
+    <a href="both.html">Both</a>
+</div>
+
+<div class="main">
+
+    <h1 class="page-title">Horror</h1>
+
+    <p class="about-text">
+      This section examines how horror films use intense facial expressions to communicate fear, tension, and vulnerability. These scenes reveal the emotional weight behind terrifying moments, emphasizing the actor’s role in building suspense and conveying danger.
+        <br><br>
+By focusing on expressions alone, the collection showcases how subtle shifts in emotion can deepen the unsettling atmosphere that defines the horror genre.
+    </p>
+
+<!-- HORROR MOVIES BELOW -->
+
+<div class="responsive">
+    <div class="gallery">
+        <img src="terrifier.jpg" alt="Terrifier">
+        <div class="desc">Terrifier (2016)</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <img src="theshining.jpg" alt="The Shining">
+        <div class="desc">The Shining (1980)</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <img src="getout.png" alt="Get Out">
+        <div class="desc">Get Out (2017)</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <img src="pearl.png" alt="Pearl">
+        <div class="desc">Pearl (2022)</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+        <img src="lsoh1986.png">
+        <div class="desc">Little Shop Of Horrors (1986)</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+        <img src="society1989.png">
+        <div class="desc">Society (1989)</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+        <img src="rouge1987.png">
+        <div class="desc">Rouge (1987)</div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="dark-overlay"></div>
+
+<!-- your navbar + page content here -->
+
+<script>
+    const overlay = document.querySelector('.dark-overlay');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            overlay.classList.add('active');
+        } else {
+            overlay.classList.remove('active');
+        }
+    });
+</script>
+</body>
+</html>
