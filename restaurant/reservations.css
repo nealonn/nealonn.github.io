@@ -1,0 +1,204 @@
+/* BASIC PAGE STYLE */
+body {
+  margin: 0;
+  font-family: 'Nyght Serif', sans-serif;
+  background-color: #F4C49E;
+  color: #2C1200;
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #C9633A;
+  padding: 10px 40px;
+}
+
+.navbar .logo img {
+  height: 60px;
+  width: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-left: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #FCE5CF;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Nyght Serif', sans-serif;
+}
+
+.navbar a:hover h2 {
+  color: #fff;
+}
+
+/* RESERVATION SECTION */
+.reservations-section {
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reservations-section h1 {
+  background-color: #C9633A;
+  color: #FFF;
+  font-family: 'Nyght Serif', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 12px 0;
+  border-radius: 5px;
+}
+
+.intro-text {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+/* FORM CONTAINER */
+.form-container {
+  background-color: #C9633A;
+  border-radius: 25px;
+  padding: 40px 35px;
+  margin: 60px auto;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.form-container h2 {
+  color: #FCE5CF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+}
+
+/* FORM GROUPS */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  color: #FCE5CF;
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background-color: #F8D6B1;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  color: #2C1200;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 0 2px #F4C49E;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+  border-radius: 20px;
+}
+
+/* SUBMIT BUTTON */
+.reserve-btn {
+  background-color: #F8D6B1;
+  color: #2C1200;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.reserve-btn:hover {
+  background-color: #f5c38f;
+  transform: translateY(-2px);
+}
+
+/* GLOBAL TYPOGRAPHY RULES */
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #F4C49E;
+  color: #2C1200;
+  text-align: center;
+}
+
+/* HEADING STYLES (keep Nyght Serif for strong display text) */
+h1, h2, h3 {
+  font-family: 'Nyght Serif', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2C1200;
+}
+
+/* NAVBAR TEXT */
+.navbar h2 {
+  font-family: 'Nyght Serif', serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #FCE5CF;
+}
+
+/* RESERVATION SECTION BODY TEXT */
+.reservations-section p,
+.form-group label,
+.form-group input,
+.form-group textarea,
+.reserve-btn {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* FORM CONTAINER TITLE */
+.form-container h2 {
+  font-family: 'Nyght Serif', serif;
+  color: #FCE5CF;
+  margin-bottom: 25px;
+}
+
+/* BUTTON FONT STYLING */
+.reserve-btn {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+
+
+/* INF*

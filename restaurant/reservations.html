@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations | La Chelita</title>
+  <link rel="stylesheet" href="reservations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="menu.html">See Menu</a></li>
+      <li><a href="#">Featured Dishes</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Reservations</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <section class="reservations-section">
+    <h1>RESERVATIONS</h1>
+    <p class="intro-text">
+      Join us for fresh Tex-Mex flavors, family vibes, and <br>
+      Jalisco-inspired comfort food. Reserve your table below.
+    </p>
+
+    <div class="info">
+      <h3>Hours of operation</h3>
+      <p>
+        Mon-Thu: 8 AM - 9 PM<br>
+        Fri-Sat: 8 AM - 10 PM<br>
+        Sun: 9 AM - 3 PM (Brunch Only)
+      </p>
+
+      <h3>Walk-ins always welcome!</h3>
+      <p>If we have space, we'll get you seated as quickly as possible.</p>
+
+      <h3>Reservation Policies</h3>
+      <p>
+        We hold tables for 15 minutes past your reservation time.<br>
+        Large parties (6+) may require a quick confirmation call.<br>
+        For same-day events, please call us directly.
+      </p>
+
+      <h3>Events</h3>
+      <p>
+        Booking for 10 or more?<br>
+        We’d love to host your celebration!<br>
+        Email us at <strong>events@lachelita.com</strong> for pricing and details.
+      </p>
+
+      <h3>Location</h3>
+      <p>
+        1234 East Cesar Chavez St.<br>
+        Austin, TX 78702
+      </p>
+
+      <h3>Contact Info</h3>
+      <p>
+        (512) 555-2746<br>
+        reservations@lachelita.com
+      </p>
+    </div>
+
+    <!-- RESERVATION FORM -->
+    <div class="form-container">
+      <h2>Make a Reservation</h2>
+      <form>
+        <input type="text" placeholder="Full name" required>
+        <input type="tel" placeholder="Phone number" required>
+        <input type="email" placeholder="Email address" required>
+        <input type="date" required>
+        <input type="time" required>
+        <input type="number" placeholder="Number of guests" min="1" required>
+        <textarea placeholder="Special requests"></textarea>
+        <button type="submit">Reserve my table</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

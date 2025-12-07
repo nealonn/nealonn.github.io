@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Chelita | Reservations</title>
+  <link rel="stylesheet" href="reservations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Nyght+Serif&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <div class="logo">
+      <img src="logo.png" alt="Restaurant Logo">
+  </div>
+  
+  <ul>
+      <li><a href="index.html"><h2>HOME</h2></a></li>
+      <li><a href="menu.html"><h2>MENU</h2></a></li>
+      <li><a href="reservation.html"><h2>RESERVATION</h2></a></li>
+      <li><a href="about.html"><h2>ABOUT</h2></a></li>
+      <li><a href="contact.html"><h2>CONTACT</h2></a></li>
+  </ul>
+</div>
+
+<!-- RESERVATION SECTION -->
+<section class="reservations-section">
+  <h1>RESERVATIONS</h1>
+  <p class="intro-text">
+    Join us for fresh Tex-Mex flavors, family vibes, and <br>
+    Jalisco-inspired comfort food. Reserve your table below.
+  </p>
+
+  <div class="info">
+    <h3>Hours of operation</h3>
+    <p>
+      Mon-Thu: 8 AM - 9 PM<br>
+      Fri-Sat: 8 AM - 10 PM<br>
+      Sun: 9 AM - 3 PM (Brunch Only)
+    </p>
+
+    <h3>Walk-ins always welcome!</h3>
+    <p>If we have space, we’ll get you seated as quickly as possible.</p>
+
+    <h3>Reservation Policies</h3>
+    <p>
+      We hold tables for 15 minutes past your reservation time.<br>
+      Large parties (6+) may require a quick confirmation call.<br>
+      For same-day events, please call us directly.
+    </p>
+
+    <h3>Events</h3>
+    <p>
+      Booking for 10 or more?<br>
+      We’d love to host your celebration!<br>
+      Email us at <strong>events@lachelita.com</strong> for pricing and details.
+    </p>
+
+    <h3>Location</h3>
+    <p>
+      1234 East Cesar Chavez St.<br>
+      Austin, TX 78702
+    </p>
+
+    <h3>Contact Info</h3>
+    <p>
+      (512) 555-2746<br>
+      reservations@lachelita.com
+    </p>
+  </div>
+
+  <div class="form-container">
+  <h2>Make a Reservation</h2>
+  <form>
+    <div class="form-group">
+      <label>Full name</label>
+      <input type="text" required>
+    </div>
+    <div class="form-group">
+      <label>Phone number</label>
+      <input type="tel" required>
+    </div>
+    <div class="form-group">
+      <label>Email address</label>
+      <input type="email" required>
+    </div>
+    <div class="form-group">
+      <label>Date</label>
+      <input type="date" required>
+    </div>
+    <div class="form-group">
+      <label>Time</label>
+      <input type="time" required>
+    </div>
+    <div class="form-group">
+      <label>Number of guests</label>
+      <input type="number" min="1" required>
+    </div>
+    <div class="form-group">
+      <label>Special requests</label>
+      <textarea></textarea>
+    </div>
+    <button type="submit" class="reserve-btn">Reserve my table</button>
+  </form>
+</div>
+
+</section>
+
+</body>
+</html>

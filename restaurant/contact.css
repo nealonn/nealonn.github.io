@@ -1,0 +1,188 @@
+/* GLOBAL PAGE SETTINGS */
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #F4C49E;
+  color: #2C1200;
+  text-align: center;
+}
+
+/* NAVBAR — consistent across all pages */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #C9633A;
+  padding: 10px 40px;
+}
+
+.navbar .logo img {
+  height: 60px;
+  width: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #FCE5CF;
+}
+
+.navbar h2 {
+  font-family: 'Nyght Serif', serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover h2 {
+  color: #fff;
+}
+
+
+/* CONTACT PAGE CONTAINER */
+.page-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+/* HERO SECTION — same feel as About page */
+.contact-hero {
+  width: 100%;
+  background-color: #C9633A;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.contact-hero h1 {
+  font-family: 'Nyght Serif', serif;
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-hero .subtitle {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* CONTACT INFO SECTION */
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-block {
+  margin-bottom: 35px;
+}
+
+/* ICONS — styled like About page placeholders */
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #DBB999;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* INDIVIDUAL ICONS (replace images as needed) */
+.location-icon  { background-image: url("image 3.jpg"); }
+.mail-icon      { background-image: url("image 4.jpg"); }
+.phone-icon     { background-image: url("image 5.jpg"); }
+.clock-icon     { background-image: url("image 6.jpg"); }
+
+/* TITLES FOR CONTACT BLOCKS */
+.contact-title,
+.hours {
+  font-family: 'Nyght Serif', serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* PARAGRAPH TEXT */
+.contact-block p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* CONTACT FORM SECTION */
+.form-section {
+  margin-top: 50px;
+}
+
+.form-container {
+  background-color: #C9633A;
+  border-radius: 25px;
+  padding: 35px 30px;
+  max-width: 420px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.form-container h2 {
+  color: #FCE5CF;
+  font-family: 'Nyght Serif', serif;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 14px;
+  color: #FCE5CF;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background-color: #F8D6B1;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+}
+
+textarea {
+  height: 110px;
+  resize: none;
+  border-radius: 18px;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  background-color: #F8D6B1;
+  color: #2C1200;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 28px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #f5c38f;
+}

@@ -1,125 +1,131 @@
-/* Starter Code */
-/* Basic Reset - removes default browser spacing */
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* Body Styling */
+
+/* GLOBAL */
 body {
-    font-family: lobster two;
-    background-color: #ghostwhite;
-    padding: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #F4C49E;
+  color: #2C1200;
+  text-align: center;
+  overflow-x: hidden;
 }
 
-
-
-
-
-
-/* Navigation Bar Container */
+/* NAVBAR (consistent across all pages) */
 .navbar {
-    background-color: #C5533C;
-    padding: 0px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction:column;
-    text-align: center;
-    margin-bottom: 0px;
-    border-radius: 0px;
-    border: 0px solid darkred;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #C9633A;
+  padding: 10px 40px;
 }
 
-/* Logo Styling */
-.logo img {
-    height: 100px;
-    width: auto;
+.navbar .logo img {
+  height: 60px;
 }
 
-/* Navigation Menu List */
 .navbar ul {
-    list-style-type: none;
-    display: flex;
-    gap: 40px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
-.navbar li {
-    display: inline;
-}
-
-/* Navigation Links */
 .navbar a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 0.3em
+  text-decoration: none;
+  color: #FCE5CF;
 }
 
-/* Hover Effect for Navigation Links */
-.navbar a:hover {
-    color: beige;
+.navbar h2 {
+  font-family: 'Nyght Serif', serif;
+  font-size: 16px;
+  margin: 0;
+  transition: 0.2s ease;
 }
 
-/* Hero Section with Image Background */
+.navbar a:hover h2 {
+  color: #fff;
+}
+
+/* HERO (styled like About page hero) */
 .hero-section {
-    background-image: url('background.png');
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-    border-radius: 10px;
-    margin-bottom: 40px;
+  width: 100%;
+  height: 85vh;
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin: 20px auto 0;
+  position: relative;
+  overflow: hidden;
 }
-/* Content Section Layout */
+
+/* Fade-out at bottom */
+.hero-section::after {
+  content: "";
+  position: absolute;
+  left: 0;        /* FIXES uneven fade */
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  border-radius: inherit;   /* matches rounded container visually */
+  pointer-events: none;     /* avoids interaction conflicts */
+  
+  background: linear-gradient(
+    to bottom,
+    rgba(244,196,158,0) 0%,
+    #F4C49E 100%
+  );
+}
+
+
+/* CONTENT SECTION */
 .content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding-bottom: 60px;
-    flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-/* Image Box Styling */
 .image-box img {
-    width: 594px;
-    height: 400px;
-    border-radius: 10px;
-    object-fit: contain;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 25px;
 }
 
-/* Text Module Styling */
-.text-module {
-    max-width: 400px;
-    text-align: left;
-}
-
+/* TEXT BLOCK */
 .text-module h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;
+  font-family: 'Nyght Serif', serif;
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
 .text-module p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-}
-/* Body Styling */
-body {
-    font-family: Nyght serif; sans-serif;
-    background-color: #f5f5f5;
-    padding: 15px;
-
+    font-family: Josefin Sans, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
+/* MENU BUTTON */
+.menu-button-container {
+  padding: 30px 0 60px;
+}
 
+.menu-button {
+  background-color: #C9633A;
+  color: #FCE5CF;
+  padding: 12px 28px;
+  border-radius: 20px;
+  font-family: 'Nyght Serif', serif;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.menu-button:hover {
+  background-color: #a3482f;
+  color: #fff;
+}
